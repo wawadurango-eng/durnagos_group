@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body> 
+
+    <div class="container">
+      <h2>regestration form</h2>
+        <form action="index.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+    
+            <button type="submit">Register</button>
+
+        </form>
+
+
+        
+
+    </div>
+<script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Registration successful!');
+        form.reset();
+    });
+</script>
+
+
+
+</body>
+</html>    
+    
